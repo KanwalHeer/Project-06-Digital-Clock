@@ -32,7 +32,7 @@ export default function DigitalClock() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-red-100 p-6  rounded-xl shadow-2xl shadow-red-300">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-red-100 p-4  rounded-xl shadow-2xl shadow-red-300">
       <div className="max-w-md w-full h-full text-center bg-red-950 p-8 rounded-xl">
         <div>
           <h1 className="text-white font-bold md:text-2xl lg:text-2xl text-center">
@@ -47,7 +47,7 @@ export default function DigitalClock() {
             {formatTime(time)}
           </h1>
         </div>
-        <div className="flex flex-row gap-2 justify-center items-center mt-5 mb-5">
+        <div className="flex flex-col md:flex-row lg:flex-row  gap-3 justify-center items-center mt-5 mb-5">
           <button
             onClick={switchTo12Hour}
             className={`py-2 px-6 rounded-xl font-semibold text-sm ${
